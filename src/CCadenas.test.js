@@ -22,4 +22,7 @@ describe("Suma de la cadena", () => {
   it("[/]1/2/3", () => {
     expect(sumarCadena("[/]1/2/3")).toEqual(6);
   });
+  it("[/][<]1/2<3", () => {
+    expect(sumarCadena("[/][<]1/2<3")).toEqual(6);
+  });
 });
