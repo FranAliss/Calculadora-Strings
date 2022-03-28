@@ -1,4 +1,9 @@
-- Toma en cuenta la cadena vacía: Para una cadena “” -> 0
-- Toma en cuenta cadena un solo número: Para una cadena “1” -> 1
-- Toma en cuenta cadena con dos números: Para una cadena “1,2” -> 3
-- Toma en cuenta cadena con varios números: Para una cadena “1,2,3” -> 6
+- Toma en cuenta la cadena vacía: Para una cadena “” -> 0 (done)
+- Toma en cuenta cadena un solo número: Para una cadena “1” -> 1 (done)
+- Toma en cuenta cadena con dos números: Para una cadena “1,2” -> 3 ()
+- Toma en cuenta cadena con varios números: Para una cadena “1,2,3” -> 6 ()
+- Toma en cuenta cadena con separadores diferentes: Para una cadena “1 - 2” -> 3 ()
+- Toma en cuenta cadena con separadores especificado: Para una cadena “//[a] 1 a 2” -> 3 ()
+- Toma en cuenta cadena con separadores de longitud distintao: Para una cadena “//[<<] 1 << 2” -> 3 ()
+- Toma en cuenta cadena con varios separadores especificados: Para una cadena “//[a][;] 1a2;3” -> 6 ()
+
