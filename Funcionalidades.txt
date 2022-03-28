@@ -1,0 +1,4 @@
+- Toma en cuenta la cadena vacía: Para una cadena “” -> 0
+- Toma en cuenta cadena un solo número: Para una cadena “1” -> 1
+- Toma en cuenta cadena con dos números: Para una cadena “1,2” -> 3
+- Toma en cuenta cadena con varios números: Para una cadena “1,2,3” -> 6
