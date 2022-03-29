@@ -1,12 +1,15 @@
 function contarDigitos(cadena,pos)
 {
-    let digitos =0;
-    while(parseInt(cadena.charAt(pos)) > 1000)
+    let digitos = 0;
+    let posicion = pos; 
+    while(parseInt(cadena.charAt(posicion)) < 1000)
     {
         digitos = digitos + 1;
-        pos ++;
+        posicion ++;
     }
+    return digitos;
 }
+
 
 function juntarDigitos(cadena, pos, digitos)
 {
@@ -20,15 +23,14 @@ function juntarDigitos(cadena, pos, digitos)
     {
         string1 = "0";
     }
-
-    return parseInt(string1);
+    return string1;
 }
+
 
 function sumarCadena(cadena)
 {
     let suma = 0;
-    let num = 0;
-    let aux = 0;
+    let num = "";
     if(cadena === ""){
         suma = 0;   
     }
@@ -40,12 +42,14 @@ function sumarCadena(cadena)
             {             
                 if(parseInt(cadena.charAt(i+1)) < 1000)
                 {
-                    aux = contarDigitos(cadena, i);
-                    num = juntarDigitos(cadena,i,aux);
-                    i = i + aux;
-                } 
-                suma = suma + parseInt(cadena.charAt(i)) + num;    
-            }   
+                    suma = suma + parseInt(juntarDigitos(cadena,i,contarDigitos(cadena, i)));
+                    i = i + contarDigitos(cadena, i);
+                }
+                else
+                {
+                    suma = suma + parseInt(cadena.charAt(i));
+                }                                               
+            }     
         }
     }
     return suma;

@@ -29,7 +29,7 @@ describe("Suma de la cadena", () => {
     expect(sumarCadena("[/][<<<]1/2<<<3-4")).toEqual(10);
   });
   it("[/][<<<]1/2<<<3-4<<<1001", () => {
-    expect(sumarCadena("[/][<<<]1/2<<<3-4<<<1131")).toEqual(1000);
+    expect(sumarCadena("[/][<<<]1/2<<<3-4<<<1131")).toEqual(10);
   });
   it("[/][<<<]1/2<<<3-4<<<1001", () => {
     expect(sumarCadena("[/][<<<]1/2<<<3-4<<<10")).toEqual(20);
