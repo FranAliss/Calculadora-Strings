@@ -3,7 +3,8 @@
 - Toma en cuenta cadena con dos números: Para una cadena “1,2” -> 3 (done)
 - Toma en cuenta cadena con varios números: Para una cadena “1,2,3” -> 6 (done)
 - Toma en cuenta cadena con separadores diferentes: Para una cadena “1-2” -> 3 (done)
-- Toma en cuenta cadena con separadores especificado: Para una cadena “//[a] 1 a 2” -> 3 ()
-- Toma en cuenta cadena con separadores de longitud distintao: Para una cadena “//[<<] 1 << 2” -> 3 ()
-- Toma en cuenta cadena con varios separadores especificados: Para una cadena “//[a][;] 1a2;3” -> 6 ()
+- Toma en cuenta cadena con separadores especificado: Para una cadena “//[a] 1 a 2” -> 3 (done)
+- Toma en cuenta cadena con separadores de longitud distintao: Para una cadena “//[<<] 1 << 2” -> 3 (done)
+- Toma en cuenta cadena con varios separadores especificados: Para una cadena “//[a][;] 1a2;3” -> 6 (done)
+- Toma en cuenta numeros menores a 1000: Para una cadena “//[a][;] 1a2;3;1001” -> 6 (done)
 
